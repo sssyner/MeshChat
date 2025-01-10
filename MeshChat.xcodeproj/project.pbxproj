@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		008547A30DB47C1F05E8E2E3 /* Data+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800771213D10D714FC9E0CB /* Data+Hex.swift */; };
+		043EC172B85B394119D3598D /* SendMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B01A721466D1F96995B3612 /* SendMessageView.swift */; };
+		0A8E1A9E601A8C3BB7260A6D /* LegalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF10CAC5570AD0FFEBA43B7 /* LegalView.swift */; };
+		0C39FAB8935C5C75E6D4FE07 /* Date+Relative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B8351CDF26FC8753011B4 /* Date+Relative.swift */; };
+		1068E65FBB1E7C44AA49B1C9 /* MessageSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6DE115C24B2E1C8C11220B /* MessageSignature.swift */; };
+		1ADD543920EB1C5B2858B4A2 /* MeshRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685392CF71199DB79429851C /* MeshRouter.swift */; };
+		1FC1C14EFDC8BDBDA8486ED7 /* PermissionGateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D38E1ABCC5BE895728DF05 /* PermissionGateView.swift */; };
+		26D6137A81452DF1C342724D /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 9353D9ABB9F731D580217539 /* GRDB */; };
+		2AD9D961A84A89DE9164718B /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F1D6942800B0FE1E474BA /* ChatViewModel.swift */; };
+		362888609542B876A47DE24E /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = BE583AD164B91DD6476359E7 /* GoogleSignIn */; };
+		3DFEFA71DAB4296AA71ADA36 /* MeshConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581068520581344CAB010CFF /* MeshConfig.swift */; };
+		4DB36B0BB4FC54FC6FE0EAAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFA65AC54370C855A39A229C /* GoogleService-Info.plist */; };
+		5B417BDB81FFA82AB97FF046 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FE17B4FD5A53D8ABCE3F8 /* ChatListView.swift */; };
+		5E1B8D3CDCB2AAB72F53C78A /* BinaryPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1631A2FF9738B06AF61B3 /* BinaryPacket.swift */; };
+		6193CBA0A4830ED003EEEDBF /* MessageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CD00F92992B694D2CD2A2 /* MessageCardView.swift */; };
+		61A3E39B88B08565CDEDF481 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09642041E246BEBF83B81290 /* LoginView.swift */; };
+		6B96299D1725E07FE01ECE8E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DC46A63F80FE0DBD4C55A7 /* ProfileView.swift */; };
+		7280FDBF49B9DF7876E41073 /* MeshChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF467D3D20AA86A5A20191C /* MeshChatApp.swift */; };
+		76FAE9E141B207C3C3E44D38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C548241939C0DC91756137CB /* Assets.xcassets */; };
+		82C2AD76620C14D378C94111 /* BLEConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C525B565EC2202ABFB6D8D4 /* BLEConstants.swift */; };
+		8613C184EE1D7508F2F54D0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A65016403127B6B71F0DE19 /* AppDelegate.swift */; };
+		86353C287689B756A88DB65B /* MessageDeduplicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92136BDB583B07620F03041 /* MessageDeduplicator.swift */; };
+		89A0AFB8745D330155085472 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D81023A866F10D05BB5C1F06 /* FirebaseAuth */; };
+		8F259DC653759EDB2188D296 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CFFCB95F1EA658DAD347CA14 /* FirebaseFirestore */; };
+		9E40518C1A86E00398081CCC /* BLEService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6F554425473F08DC4D7FF /* BLEService.swift */; };
+		A71CA33943282AE9447651EA /* CloudSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C03BE6F482D23A43F836F3C /* CloudSyncService.swift */; };
+		AC6F2427CA2614DA643CFC0D /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6A8C033EB97E259124604 /* StatsViewModel.swift */; };
+		BEC1D8F878DB13FBBE6FD4D1 /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79550D4D5B61142180689F3 /* Peer.swift */; };
+		BF48DEFE035ED8415E443CD4 /* MeshMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DBF6DA5D1C336EB2B0F9A /* MeshMessage.swift */; };
+		C7D28F54B34FD3A77A5E356B /* BLEPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AAEC2C3B411ED01DDD83E8 /* BLEPeripheralManager.swift */; };
+		C9D0380670BA086635E4D170 /* MeshMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB803EFAA518400E5176171C /* MeshMapView.swift */; };
+		CED669179465AE4C6B34FB45 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623F040BACF2C79FBE9EA756 /* StatsView.swift */; };
+		CF2AFCF35733E00F02524D57 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52941B22180E8868D9D944C2 /* AuthService.swift */; };
+		D2D812A71792D2698DD9C520 /* ModerationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2A2706352B8632E5CD420D /* ModerationService.swift */; };
+		D6076845599BAF264E1793AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB86ACE7A187F7CFE0B41886 /* ContentView.swift */; };
+		D6DA8FDD46B95CB6E5C18D65 /* MessageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B48C02FA58786B96907FD /* MessageStore.swift */; };
+		D75786129AACF16F9CFF3D44 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F63033074E518AF70880C5 /* LocationService.swift */; };
+		DE1B4E80B2CFB1AAEF9AC881 /* PacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5305BEA8AE275A6BB66FD9 /* PacketType.swift */; };
+		DF2A5FA60EBE9F6A5F32746F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00CB8B6FCB90679F035B53A /* Logger.swift */; };
+		E0F204B9D2C7CACB090F20F1 /* BLECentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC3C1F02C51C32CF81B5038 /* BLECentralManager.swift */; };
+		EB795C42677882FC25EEBED6 /* DangerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3F925F67BD14ADB34DA353 /* DangerType.swift */; };
+		FBCCBA44901132D0DA938B90 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A973AAFC9E56BFAC8441F /* MapViewModel.swift */; };
+		FEE2BDDA0F146F2BE02457AE /* FragmentAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3FA7C5F00D59CF81C5FA0 /* FragmentAssembler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09642041E246BEBF83B81290 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0EF467D3D20AA86A5A20191C /* MeshChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshChatApp.swift; sourceTree = "<group>"; };
+		0F51347E98803A5CD93E496A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0F7DBF6DA5D1C336EB2B0F9A /* MeshMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshMessage.swift; sourceTree = "<group>"; };
+		19C1631A2FF9738B06AF61B3 /* BinaryPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryPacket.swift; sourceTree = "<group>"; };
+		1AB6F554425473F08DC4D7FF /* BLEService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEService.swift; sourceTree = "<group>"; };
+		1E2A2706352B8632E5CD420D /* ModerationService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModerationService.swift; sourceTree = "<group>"; };
+		1E3F925F67BD14ADB34DA353 /* DangerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerType.swift; sourceTree = "<group>"; };
+		28D38E1ABCC5BE895728DF05 /* PermissionGateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionGateView.swift; sourceTree = "<group>"; };
+		2C525B565EC2202ABFB6D8D4 /* BLEConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEConstants.swift; sourceTree = "<group>"; };
+		3800771213D10D714FC9E0CB /* Data+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Hex.swift"; sourceTree = "<group>"; };
+		3B01A721466D1F96995B3612 /* SendMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageView.swift; sourceTree = "<group>"; };
+		3F6DE115C24B2E1C8C11220B /* MessageSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSignature.swift; sourceTree = "<group>"; };
+		42492693AA23D63EC89C8972 /* MeshChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MeshChat.entitlements; sourceTree = "<group>"; };
+		445B8351CDF26FC8753011B4 /* Date+Relative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Relative.swift"; sourceTree = "<group>"; };
+		4C03BE6F482D23A43F836F3C /* CloudSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncService.swift; sourceTree = "<group>"; };
+		52941B22180E8868D9D944C2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		581068520581344CAB010CFF /* MeshConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshConfig.swift; sourceTree = "<group>"; };
+		5DC3C1F02C51C32CF81B5038 /* BLECentralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLECentralManager.swift; sourceTree = "<group>"; };
+		5E1B48C02FA58786B96907FD /* MessageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageStore.swift; sourceTree = "<group>"; };
+		623F040BACF2C79FBE9EA756 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		640FE17B4FD5A53D8ABCE3F8 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		685392CF71199DB79429851C /* MeshRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshRouter.swift; sourceTree = "<group>"; };
+		71DC46A63F80FE0DBD4C55A7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		77AAEC2C3B411ED01DDD83E8 /* BLEPeripheralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPeripheralManager.swift; sourceTree = "<group>"; };
+		7A65016403127B6B71F0DE19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F3A973AAFC9E56BFAC8441F /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		9119BB3354CD9747F6E3AC30 /* MeshChat.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MeshChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D5305BEA8AE275A6BB66FD9 /* PacketType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketType.swift; sourceTree = "<group>"; };
+		9F1CD00F92992B694D2CD2A2 /* MessageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCardView.swift; sourceTree = "<group>"; };
+		AAF10CAC5570AD0FFEBA43B7 /* LegalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LegalView.swift; sourceTree = "<group>"; };
+		B5F63033074E518AF70880C5 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		B79550D4D5B61142180689F3 /* Peer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peer.swift; sourceTree = "<group>"; };
+		BB86ACE7A187F7CFE0B41886 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BFA65AC54370C855A39A229C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C548241939C0DC91756137CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C92136BDB583B07620F03041 /* MessageDeduplicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDeduplicator.swift; sourceTree = "<group>"; };
+		DB7F1D6942800B0FE1E474BA /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		E00CB8B6FCB90679F035B53A /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		E1E6A8C033EB97E259124604 /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
+		EB803EFAA518400E5176171C /* MeshMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshMapView.swift; sourceTree = "<group>"; };
+		FAE3FA7C5F00D59CF81C5FA0 /* FragmentAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FragmentAssembler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8877FD36BCED43DACECCDE25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89A0AFB8745D330155085472 /* FirebaseAuth in Frameworks */,
+				8F259DC653759EDB2188D296 /* FirebaseFirestore in Frameworks */,
+				26D6137A81452DF1C342724D /* GRDB in Frameworks */,
+				362888609542B876A47DE24E /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03409BA9A96EC93FD54A3202 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				B5F63033074E518AF70880C5 /* LocationService.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		082DAA82DCB60D1C544B399A /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				5E1B48C02FA58786B96907FD /* MessageStore.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		3C0020F8B52CE7A2597256FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9119BB3354CD9747F6E3AC30 /* MeshChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F25760B83BE0B3A567CFA73 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				623F040BACF2C79FBE9EA756 /* StatsView.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		4816AD445901F8B4547F02C7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				19C1631A2FF9738B06AF61B3 /* BinaryPacket.swift */,
+				FAE3FA7C5F00D59CF81C5FA0 /* FragmentAssembler.swift */,
+				C92136BDB583B07620F03041 /* MessageDeduplicator.swift */,
+				9D5305BEA8AE275A6BB66FD9 /* PacketType.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6F5730A8FAD4A37149FEA54F /* MeshChat */ = {
+			isa = PBXGroup;
+			children = (
+				7A65016403127B6B71F0DE19 /* AppDelegate.swift */,
+				C548241939C0DC91756137CB /* Assets.xcassets */,
+				BFA65AC54370C855A39A229C /* GoogleService-Info.plist */,
+				0F51347E98803A5CD93E496A /* Info.plist */,
+				42492693AA23D63EC89C8972 /* MeshChat.entitlements */,
+				0EF467D3D20AA86A5A20191C /* MeshChatApp.swift */,
+				A7167DA7118CCA6188397A90 /* Config */,
+				AF518A236B5AED7F3F88B4DF /* Models */,
+				4816AD445901F8B4547F02C7 /* Protocol */,
+				F11B975E2446978DD401993B /* Services */,
+				BDF94C4122A2C39BDA4046AF /* Utilities */,
+				F2A0C060A476B75A5EE44886 /* ViewModels */,
+				CB948F5910465BC65E997AE8 /* Views */,
+			);
+			path = MeshChat;
+			sourceTree = "<group>";
+		};
+		7715F75EA548728D5E716065 = {
+			isa = PBXGroup;
+			children = (
+				6F5730A8FAD4A37149FEA54F /* MeshChat */,
+				3C0020F8B52CE7A2597256FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82FFBE4FD3FBE3FFB466DCA7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3800771213D10D714FC9E0CB /* Data+Hex.swift */,
+				445B8351CDF26FC8753011B4 /* Date+Relative.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		994D3F29B1C175D2CD176D9D /* Moderation */ = {
+			isa = PBXGroup;
+			children = (
+				1E2A2706352B8632E5CD420D /* ModerationService.swift */,
+			);
+			name = Moderation;
+			path = Moderation;
+			sourceTree = "<group>";
+		};
+		9BAF020ED8AC0DE42CF08199 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				EB803EFAA518400E5176171C /* MeshMapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		9F7829165F394ADA0C2923F0 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				640FE17B4FD5A53D8ABCE3F8 /* ChatListView.swift */,
+				9F1CD00F92992B694D2CD2A2 /* MessageCardView.swift */,
+				3B01A721466D1F96995B3612 /* SendMessageView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		A7167DA7118CCA6188397A90 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				581068520581344CAB010CFF /* MeshConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		AF518A236B5AED7F3F88B4DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E3F925F67BD14ADB34DA353 /* DangerType.swift */,
+				0F7DBF6DA5D1C336EB2B0F9A /* MeshMessage.swift */,
+				B79550D4D5B61142180689F3 /* Peer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B9E69FDBC5A4A1B5E7F795F7 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				5DC3C1F02C51C32CF81B5038 /* BLECentralManager.swift */,
+				2C525B565EC2202ABFB6D8D4 /* BLEConstants.swift */,
+				77AAEC2C3B411ED01DDD83E8 /* BLEPeripheralManager.swift */,
+				1AB6F554425473F08DC4D7FF /* BLEService.swift */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		BDF94C4122A2C39BDA4046AF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E00CB8B6FCB90679F035B53A /* Logger.swift */,
+				3F6DE115C24B2E1C8C11220B /* MessageSignature.swift */,
+				82FFBE4FD3FBE3FFB466DCA7 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CB948F5910465BC65E997AE8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB86ACE7A187F7CFE0B41886 /* ContentView.swift */,
+				09642041E246BEBF83B81290 /* LoginView.swift */,
+				28D38E1ABCC5BE895728DF05 /* PermissionGateView.swift */,
+				71DC46A63F80FE0DBD4C55A7 /* ProfileView.swift */,
+				9F7829165F394ADA0C2923F0 /* Chat */,
+				3F25760B83BE0B3A567CFA73 /* Debug */,
+				9BAF020ED8AC0DE42CF08199 /* Map */,
+				AAF10CAC5570AD0FFEBA43B7 /* LegalView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E43BD86FF5BD7A15D9F4209E /* Moderation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Moderation;
+			sourceTree = "<group>";
+		};
+		E5A9991166F4782A6C95ED0B /* Cloud */ = {
+			isa = PBXGroup;
+			children = (
+				52941B22180E8868D9D944C2 /* AuthService.swift */,
+				4C03BE6F482D23A43F836F3C /* CloudSyncService.swift */,
+			);
+			path = Cloud;
+			sourceTree = "<group>";
+		};
+		F11B975E2446978DD401993B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				685392CF71199DB79429851C /* MeshRouter.swift */,
+				B9E69FDBC5A4A1B5E7F795F7 /* BLE */,
+				E5A9991166F4782A6C95ED0B /* Cloud */,
+				03409BA9A96EC93FD54A3202 /* Location */,
+				082DAA82DCB60D1C544B399A /* Storage */,
+				E43BD86FF5BD7A15D9F4209E /* Moderation */,
+				994D3F29B1C175D2CD176D9D /* Moderation */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F2A0C060A476B75A5EE44886 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DB7F1D6942800B0FE1E474BA /* ChatViewModel.swift */,
+				7F3A973AAFC9E56BFAC8441F /* MapViewModel.swift */,
+				E1E6A8C033EB97E259124604 /* StatsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23BE0F730BAE021F1EB760C1 /* MeshChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C84D6BFCCDD2FD13CBF9A05A /* Build configuration list for PBXNativeTarget "MeshChat" */;
+			buildPhases = (
+				9196630247FEB3B28A709E66 /* Sources */,
+				6439118C355B0BAB5F3F089F /* Resources */,
+				8877FD36BCED43DACECCDE25 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeshChat;
+			packageProductDependencies = (
+				D81023A866F10D05BB5C1F06 /* FirebaseAuth */,
+				CFFCB95F1EA658DAD347CA14 /* FirebaseFirestore */,
+				9353D9ABB9F731D580217539 /* GRDB */,
+				BE583AD164B91DD6476359E7 /* GoogleSignIn */,
+			);
+			productName = MeshChat;
+			productReference = 9119BB3354CD9747F6E3AC30 /* MeshChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D31B3C195671DB79B60C90E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					23BE0F730BAE021F1EB760C1 = {
+						DevelopmentTeam = 9BMC2CMBHF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BCAEC799898076F1EB3D0E1C /* Build configuration list for PBXProject "MeshChat" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7715F75EA548728D5E716065;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B6A07C7C790E8CF81ED30E8B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				270C40ED8367C09A949E8FC5 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+				7B2B4A26458DC227D3D2DF83 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3C0020F8B52CE7A2597256FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23BE0F730BAE021F1EB760C1 /* MeshChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6439118C355B0BAB5F3F089F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FAE9E141B207C3C3E44D38 /* Assets.xcassets in Resources */,
+				4DB36B0BB4FC54FC6FE0EAAA /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9196630247FEB3B28A709E66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8613C184EE1D7508F2F54D0C /* AppDelegate.swift in Sources */,
+				CF2AFCF35733E00F02524D57 /* AuthService.swift in Sources */,
+				E0F204B9D2C7CACB090F20F1 /* BLECentralManager.swift in Sources */,
+				82C2AD76620C14D378C94111 /* BLEConstants.swift in Sources */,
+				C7D28F54B34FD3A77A5E356B /* BLEPeripheralManager.swift in Sources */,
+				9E40518C1A86E00398081CCC /* BLEService.swift in Sources */,
+				5E1B8D3CDCB2AAB72F53C78A /* BinaryPacket.swift in Sources */,
+				5B417BDB81FFA82AB97FF046 /* ChatListView.swift in Sources */,
+				2AD9D961A84A89DE9164718B /* ChatViewModel.swift in Sources */,
+				A71CA33943282AE9447651EA /* CloudSyncService.swift in Sources */,
+				D6076845599BAF264E1793AF /* ContentView.swift in Sources */,
+				EB795C42677882FC25EEBED6 /* DangerType.swift in Sources */,
+				008547A30DB47C1F05E8E2E3 /* Data+Hex.swift in Sources */,
+				0C39FAB8935C5C75E6D4FE07 /* Date+Relative.swift in Sources */,
+				FEE2BDDA0F146F2BE02457AE /* FragmentAssembler.swift in Sources */,
+				D75786129AACF16F9CFF3D44 /* LocationService.swift in Sources */,
+				DF2A5FA60EBE9F6A5F32746F /* Logger.swift in Sources */,
+				61A3E39B88B08565CDEDF481 /* LoginView.swift in Sources */,
+				FBCCBA44901132D0DA938B90 /* MapViewModel.swift in Sources */,
+				7280FDBF49B9DF7876E41073 /* MeshChatApp.swift in Sources */,
+				3DFEFA71DAB4296AA71ADA36 /* MeshConfig.swift in Sources */,
+				C9D0380670BA086635E4D170 /* MeshMapView.swift in Sources */,
+				BF48DEFE035ED8415E443CD4 /* MeshMessage.swift in Sources */,
+				1ADD543920EB1C5B2858B4A2 /* MeshRouter.swift in Sources */,
+				6193CBA0A4830ED003EEEDBF /* MessageCardView.swift in Sources */,
+				86353C287689B756A88DB65B /* MessageDeduplicator.swift in Sources */,
+				1068E65FBB1E7C44AA49B1C9 /* MessageSignature.swift in Sources */,
+				D6DA8FDD46B95CB6E5C18D65 /* MessageStore.swift in Sources */,
+				DE1B4E80B2CFB1AAEF9AC881 /* PacketType.swift in Sources */,
+				BEC1D8F878DB13FBBE6FD4D1 /* Peer.swift in Sources */,
+				1FC1C14EFDC8BDBDA8486ED7 /* PermissionGateView.swift in Sources */,
+				6B96299D1725E07FE01ECE8E /* ProfileView.swift in Sources */,
+				043EC172B85B394119D3598D /* SendMessageView.swift in Sources */,
+				CED669179465AE4C6B34FB45 /* StatsView.swift in Sources */,
+				AC6F2427CA2614DA643CFC0D /* StatsViewModel.swift in Sources */,
+				D2D812A71792D2698DD9C520 /* ModerationService.swift in Sources */,
+				0A8E1A9E601A8C3BB7260A6D /* LegalView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		21E7ABFCC623D42702BC7129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MeshChat/MeshChat.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BMC2CMBHF;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MeshChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synergyhq.meshchat;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A4F1F9E3FB20F25ED783EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6CA06DF9BF1A90D07719D543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EBED66F09B47F1577B5606FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MeshChat/MeshChat.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BMC2CMBHF;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MeshChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synergyhq.meshchat;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCAEC799898076F1EB3D0E1C /* Build configuration list for PBXProject "MeshChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA06DF9BF1A90D07719D543 /* Debug */,
+				2A4F1F9E3FB20F25ED783EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C84D6BFCCDD2FD13CBF9A05A /* Build configuration list for PBXNativeTarget "MeshChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21E7ABFCC623D42702BC7129 /* Debug */,
+				EBED66F09B47F1577B5606FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		270C40ED8367C09A949E8FC5 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		7B2B4A26458DC227D3D2DF83 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		B6A07C7C790E8CF81ED30E8B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9353D9ABB9F731D580217539 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 270C40ED8367C09A949E8FC5 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+		BE583AD164B91DD6476359E7 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B2B4A26458DC227D3D2DF83 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		CFFCB95F1EA658DAD347CA14 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6A07C7C790E8CF81ED30E8B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		D81023A866F10D05BB5C1F06 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6A07C7C790E8CF81ED30E8B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D31B3C195671DB79B60C90E7 /* Project object */;
+}
